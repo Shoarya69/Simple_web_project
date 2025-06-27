@@ -1,0 +1,92 @@
+.dashboard {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dashboard-title {
+    font-size: 2.5em;
+    color: var(--secondary, #eebbc3);
+    margin-bottom: 32px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 36px;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 60px;
+}
+
+.product-card {
+    background: linear-gradient(120deg, #232946 65%, #b8c1ec24 100%);
+    border: 2px solid var(--secondary, #eebbc3);
+    border-radius: 16px;
+    padding: 28px 18px 22px 18px;
+    box-shadow: 0 2px 18px #23294633;
+    color: var(--text, #fffffe);
+    font-size: 1.12em;
+    text-align: center;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: background 0.25s, box-shadow 0.25s, border-color 0.2s;
+}
+
+.product-card:hover,
+.product-card:focus-within {
+    background: linear-gradient(120deg, #eebbc3 65%, #232946 100%);
+    color: var(--primary, #232946);
+    border: 2px solid var(--accent, #b8c1ec);
+    box-shadow: 0 0 32px 0 #eebbc377, 0 2px 22px #23294655;
+}
+
+.product-img {
+    width: 150px;
+    height: 150px;
+    background: #b8c1ec33;
+    margin-bottom: 18px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.product-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+}
+
+.product-name {
+    color: var(--accent, #b8c1ec);
+    margin-bottom: 10px;
+    font-size: 1.18em;
+    font-weight: 700;
+}
+
+.product-desc {
+    font-size: 0.95em;
+    color: var(--text, #ddddff);
+    margin-bottom: 14px;
+    min-height: 36px;
+}
+
+.product-price {
+    margin-top: 8px;
+    font-size: 1.04em;
+    color: var(--secondary, #eebbc3);
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
